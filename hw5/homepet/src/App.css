@@ -1,0 +1,142 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photos-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.photos-container .pet-photo {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: flex;
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pet-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+  margin-bottom: 20px;
+}
+
+.pet-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.pet-emoji {
+  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-info h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.pet-info p {
+  margin: 4px 0 0;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+.pet-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pet-detail-item {
+  text-align: center;
+}
+
+.pet-detail-item .label {
+  font-size: 12px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pet-detail-item .value {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.happiness-counter {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.happiness-counter h3 {
+  margin: 0 0 16px;
+  color: #333;
+}
+
+.happiness-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.happiness-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.happiness-btn.decrease {
+  background: #ffcdd2;
+  color: #c62828;
+}
+
+.happiness-btn.decrease:hover {
+  background: #ef9a9a;
+}
+
+.happiness-btn.increase {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.happiness-btn.increase:hover {
+  background: #a5d6a7;
+}
+
+.happiness-level {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #555;
+}
